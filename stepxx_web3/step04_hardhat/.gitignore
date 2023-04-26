@@ -1,0 +1,25 @@
+# Hardhat cache
+cache/
+
+# Node.js dependencies
+node_modules/
+
+# Build artifacts
+artifacts/
+
+# TypeScript build output
+dist/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Environment variables
+.env
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak

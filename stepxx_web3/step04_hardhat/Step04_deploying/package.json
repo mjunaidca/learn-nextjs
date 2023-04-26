@@ -1,0 +1,16 @@
+{
+  "name": "step04_deploying",
+  "version": "1.0.0",
+  "description": "<h1>Deplpoying Smart Contracts with Hardhat</h1>\r <p>After compiling and testing smart contracts we will deploy them.</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.14.0"
+  }
+}

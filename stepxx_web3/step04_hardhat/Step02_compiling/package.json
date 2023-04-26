@@ -1,0 +1,16 @@
+{
+  "name": "step02_compiling",
+  "version": "1.0.0",
+  "description": "<h1>Compiling Smart Contracts with Hardhat</h1>\r <p>After setting up the development environment in Step 01, we will now explore how Hardhat compiles smart contracts.</p>\r <p>To compile smart contracts in the Hardhat development environment, use the built-in compile task:</p>\r <pre><code>npx hardhat compile</code></pre>\r <p>Upon successful compilation, you should see the following output:</p>\r <pre><code>Compiling...\r Compiled 1 contract successfully</code></pre>\r <p>The compiled artifacts are saved in the <code>artifacts/</code> directory by default, or the configured artifacts path. Hardhat will create this directory if it doesn't exist.</p>\r <p>Hardhat attempts to minimize recompilation work. If no files have been changed since the last compilation, nothing will be recompiled:</p>\r <pre><code>npx hardhat compile\r Nothing to compile</code></pre>\r <p>If only one file is modified, only that file and others affected by it will be recompiled.</p>\r <p>To force a compilation, use the --force argument, or run npx hardhat clean to clear the cache and delete the artifacts.</p>\r <h2>What Happens During Compilation</h2>\r <p>When you run the command <code>npx hardhat compile</code>, the following occurs:</p>\r <ol>\r   <li>The Solidity compiler reads the smart contract source files from the <code>contracts/</code> directory.</li>\r   <li>The compiler checks the source code for syntax errors and adherence to the Solidity language rules.</li>\r   <li>If the source code is valid, the compiler generates the bytecode and ABI for each smart contract.</li>\r   <li>The compiler saves the bytecode and ABI as artifacts in the <code>artifacts/</code> directory (or the configured path).</li>\r </ol>\r <p>Your application can now use these artifacts to interact with the smart contracts on the Ethereum network. The ABI is required to encode and decode data, while the bytecode is needed to deploy the contract.</p>\r <h2>Configuring the Compiler</h2>\r <p>To customize Solidity compiler options, modify the <code>solidity</code> field in your <code>hardhat.config.js</code>. The simplest way is by setting the compiler version, which we recommend always doing:</p>\r <pre><code>module.exports = {\r   solidity: \"0.8.9\",\r };</code></pre>\r <p>Setting a compiler version avoids unexpected behavior or compiling errors as new releases of Solidity are published.</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.14.0"
+  }
+}

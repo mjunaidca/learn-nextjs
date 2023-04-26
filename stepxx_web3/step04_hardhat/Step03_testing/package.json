@@ -1,0 +1,16 @@
+{
+  "name": "step03_testing",
+  "version": "1.0.0",
+  "description": "<h1>Testing Smart Contracts with Hardhat</h1>\r <p>After learning all about compiling smart contracts next step is to write some tests to verify that they work as intended. TypeScript helps to get better autocompletion and catch possible errors earlier.</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.14.0"
+  }
+}

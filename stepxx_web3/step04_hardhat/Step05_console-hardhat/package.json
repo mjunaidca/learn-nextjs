@@ -1,0 +1,16 @@
+{
+  "name": "step05_console-hardhat",
+  "version": "1.0.0",
+  "description": "<h1>Using the Hardhat Console</h1>\r <p>In this step, you'll learn how to use the Hardhat interactive console to interact with the Ethereum network and your smart contracts.</p>\r <h2>Starting the Hardhat Console</h2>\r <p>Run the following command to start the Hardhat console:</p>\r <pre><code>npx hardhat console</code></pre>\r <p>This will open a Node.js console with the Hardhat Runtime Environment initialized and injected into the global scope. You will have access to the 'config' and 'ethers' objects, among other things, in the global scope:</p>\r <pre><code>config</code></pre>\r <pre><code>ethers</code></pre>\r <p>Alternatively, you can require the Hardhat Runtime Environment explicitly:</p>\r <pre><code>const hre = require(\"hardhat\")\r console.log(hre.ethers.getSigners())</code></pre>\r <h3>Interacting with the Ethereum Network and Smart Contracts</h3>\r <p>Once you've started the Hardhat console, you can use it to interact with the Ethereum network and your smart contracts. The console supports any JavaScript code, libraries, or APIs that you've installed.</p>\r <p>As the console supports asynchronous operations, you can interact with the Ethereum network and your smart contracts using JavaScript Promises. To simplify this process, the Hardhat console supports top-level await statements, allowing you to use asynchronous operations as if they were synchronous.</p>\r <p>The console also offers a handy history feature, which includes history across different sessions. Try it out by pressing the up arrow key.</p>\r <h2>Learning Resources</h2>\r <ul>\r   <li><a href=\"https://hardhat.org/hardhat-console/\">Using the Hardhat Console</a></li>\r   <li><a href=\"https://docs.ethers.io/v5/getting-started/\">Getting Started with ethers.js</a></li>\r </ul>\r <p>Now you are familiar with using the Hardhat console to interact with the Ethereum network and your smart contracts.</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.14.0"
+  }
+}

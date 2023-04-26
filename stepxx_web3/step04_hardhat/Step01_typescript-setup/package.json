@@ -1,0 +1,16 @@
+{
+  "name": "step01_typescript-setup",
+  "version": "1.0.0",
+  "description": "<h1>SetUp HardHat Development Environment With TypeScript</h1>\r <p>HardHat is a development environment for Solidity, which allows you to run and deploy smart contracts.</p> \r <p>HardHat Runner is the primary component used when working with HardHat, which provides a flexible and extensible task runner for managing and automating tasks related to developing smart contracts and dApps.</p>\r <h2>Setup</h2>\r <p>Follow these commands to set up and run your first smart contract with TypeScript:</p>\r <ol>\r   <li>Create an empty folder:</li>\r   <pre><code>mkdir typescript-setup</code></pre>\r   <li>Create an npm project:</li>\r   <pre><code>npm init -y</code></pre>\r   <li>Install HardHat as a devdependency:</li>\r   <pre><code>npm install --save-dev hardhat</code></pre>\r   <li>Open the folder in Visual Studio Code and review the `package.json` file to ensure that HardHat devdependencies are installed.</li>\r   <li>Create a sample TypeScript project by running the following command and selecting \"Create a TypeScript project\" option:</li>\r   <pre><code>npx hardhat</code></pre>\r   <li>Install the following dependencies before running the sample project:</li>\r   <pre><code>npm install --save-dev \"hardhat@^2.14.0\" \"@nomicfoundation/hardhat-toolbox@^2.0.0”</code></pre>\r   <li>Open the code in Visual Studio Code and run the following command to compile the smart contract present in the contracts directory:</li>\r   <pre><code>npx hardhat compile</code></pre>\r   <li>Run pre-written tests in the tests directory using the following command:</li>\r   <pre><code>npx hardhat test</code></pre>\r   <li>Deploy the contract using the `deploy.ts` script:</li>\r   <pre><code>npx hardhat run scripts/deploy.ts</code></pre>\r </ol>\r Note:  If you get HH114 or HH113 or Unexpected error then ensure that you didn;t missed any of the above commands.\r <h2>Connecting to HardHat Network</h2>\r <p>To connect your script with the HardHat network, follow these steps:</p>\r <ol>\r   <li>In your project terminal, run the command:</li>\r   <pre><code>npx hardhat node</code></pre>\r   <p>This creates a private local environment to deploy your contract. You have full control over it, and it is secure, providing faster and safer control.</p>\r   <li>To deploy your smart contract locally, open a new terminal and run the following command to use the local HardHat network:</li>\r   <pre><code>npx hardhat run scripts/deploy.ts --network localhost</code></pre>\r </ol>\r <p>Congratulations! You have created a project and compiled, tested, and deployed a smart contract using HardHat.</p>\r <h2>Resources</h2>\r <p>For more information, visit the <a href=\"https://hardhat.org/hardhat-runner/docs/getting-started#overview\">HardHat Runner - Getting Started Overview</a>.</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.14.0"
+  }
+}
