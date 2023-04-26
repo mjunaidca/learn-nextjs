@@ -1,0 +1,16 @@
+{
+  "name": "step02_structure_contract",
+  "version": "1.0.0",
+  "description": "<h2> Structure Of Smart Contract </h2>\r A contract consists of the following multiple constructs. Understanding these different facets of variables and functions is essential in order to create robust and efficient smart contracts in Solidity.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.14.0"
+  }
+}

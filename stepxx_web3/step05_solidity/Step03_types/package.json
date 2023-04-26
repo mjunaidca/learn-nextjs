@@ -1,0 +1,16 @@
+{
+  "name": "step03_types",
+  "version": "1.0.0",
+  "description": "<h2>Exploring Data Types in Solidity</h2>\r <p>Solidity has two main categories of data types: value types and reference types.</p>\r <h3>Value Types</h3>\r <p>Value types hold data directly within their own memory and do not exceed 32 bytes in size. They include:</p>\r <ul>\r   <li><code>bool</code>: Boolean values, either true or false.</li>\r   <li><code>uint</code>: Unsigned integers, holding non-negative values.</li>\r   <li><code>int</code>: Signed integers, holding both positive and negative values.</li>\r   <li><code>address</code>: Represents an account's address in the Ethereum environment.</li>\r   <li><code>byte</code>: Fixed-sized byte arrays (byte1 to bytes32).</li>\r   <li><code>enum</code>: Enumerations with predefined constant values.</li>\r </ul>\r <h3>Reference Types</h3>\r <p>Reference types store an address pointing to the memory location containing the actual data, and can exceed 32 bytes in size. They include:</p>\r <ul>\r   <li><strong>Arrays:</strong> Fixed-size and dynamic arrays, including string and byte arrays. Fixed-size arrays have a predetermined length, while dynamic arrays can be resized during runtime.</li>\r   <li><strong>Structs:</strong> Custom, user-defined structures.</li>\r   <li><strong>Mappings:</strong> Key-value pairs, similar to hash tables or dictionaries in other languages. Mappings store data in an unordered format, allowing for efficient lookups by key. However, keys must be unique and cannot be enumerated.</li>\r </ul>\r <h2>Storage and Memory Data Locations</h2>\r <p>Each variable within a contract has a data location, with the Ethereum Virtual Machine (EVM) providing four storage structures:</p>\r <ul>\r   <li><strong>Storage:</strong> Permanent, global memory accessible by all functions in a contract.</li>\r   <li><strong>Memory:</strong> Temporary, local memory accessible by each function in a contract, cleared after function execution.</li>\r   <li><strong>Calldata:</strong> Read-only memory storing incoming function execution data, including arguments.</li>\r   <li><strong>Stack:</strong> EVM's working set memory, holding variables and intermediate values for processing Ethereum instructions. Limited to 1,024 levels; exceeding this limit raises an exception.</li>\r </ul>\r <p>The data location of a variable depends on:</p>\r <ul>\r   <li>The variable's declaration location</li>\r   <li>The variable's data type</li>\r </ul>\r <p>These factors determine a variable's data location according to specific rules.</p>\r <h4>Learning Resources</h4>\r <ul>\r   <li><a href=\"#\">Solidity Essentials CH 3</a></li>\r   <li><a href=\"https://docs.soliditylang.org/en/v0.8.19/types.html#conversions-between-elementary-types\">Solidity Documentation - Types</a></li>\r </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.14.0"
+  }
+}
