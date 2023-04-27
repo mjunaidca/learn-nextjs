@@ -36,5 +36,8 @@
 <p><a href="https://ethereum.org/en/developers/tutorials/hello-world-smart-contract/">HELLO WORLD SMART CONTRACT FOR BEGINNERS</a></p>
 
 <p><a href="https://www.freecodecamp.org/news/full-stack-ethereum-development/">FCC dApp with React, Ethers.js, Solidity, and Hardhat</a></p>
+<p><a href="https://www.youtube.com/watch?v=24Nl4fVGH6g">Saturday 1st Jan 2022. Block chain starting session </a></p>
+<p><a href="https://www.youtube.com/watch?v=yk7nVp5HTCk">Master Ethers.js for Blockchain Step-by-Step </a></p>
+
 
 <p>Happy learning!</p>
