@@ -8,4 +8,6 @@ You can try out code examples directly in your browser with the <a href='https:/
 
 As humans write software, it can have bugs. You should follow established software development best-practices when writing your smart contracts. Here each step will be a hardhat project including tests and deployment scripts.
 
+Till step 7 we will learn the basics of solidity, then we will learn how to write smart contracts.
+
 You can also take help from this [repo](https://github.com/panaverse/defi-dapps-solidity-smart-contracts)
