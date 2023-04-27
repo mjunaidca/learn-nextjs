@@ -1,4 +1,4 @@
-<h2>Exploring Data Types in Solidity</h2>
+<h1>Exploring Data Types in Solidity</h1>
 <p>Solidity has two main categories of data types: value types and reference types.</p>
 <h3>Value Types</h3>
 <p>Value types hold data directly within their own memory and do not exceed 32 bytes in size. They include:</p>
@@ -31,6 +31,18 @@
   <li>The variable's data type</li>
 </ul>
 <p>These factors determine a variable's data location according to specific rules.</p>
+
+<h3>More Data Types:</h3>
+1. Literals in Solidity: Literals are constant values, like "building blocks" for your code. They don't have names and remain the same throughout a program. Examples include numbers (42), strings ("hello"), and addresses (0xca35...).
+
+2. Integers in Solidity: Integers store numbers, like the "age" of a user. They come in signed (negative and positive) and unsigned (only positive) flavors, such as int8, uint8, int16, etc.
+
+3. Boolean data type in Solidity: Booleans are like switches, with only two states: true or false. They're great for conditions, like checking if a user is an admin (true) or not (false).
+
+4.Byte data type in Solidity: Bytes store binary data, like a "fingerprint" for a document. They come in different sizes (bytes1 to bytes32), and you can perform bitwise operations on them.
+
+5. Arrays in Solidity:
+Arrays are like "shelves" that store multiple values of the same type. They help organize and manage data, like a list of users' ages or their account balances.
 
 <h4>Remix Test.</h4>
 <p> Copy the smart contract and run it in the browser Remix environment <a href="https://remix.ethereum.org/">https://remix.ethereum.org/</a> </p>
