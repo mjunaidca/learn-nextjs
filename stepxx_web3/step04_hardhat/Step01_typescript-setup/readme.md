@@ -28,7 +28,8 @@
   <li>Create a sample TypeScript project by running the following command and selecting "Create a TypeScript project" option:</li>
   <pre><code>npx hardhat</code></pre>
   <li>Most of Hardhat's functionality comes from plugins. To use a plugin, the first step is always to install it using npm or yarn, followed by requiring it in your config file. Install the following dependencies before running the sample project to use the default plugin that comes with sample project setup. Iy has everything you need for developing smart contracts:</li>
-  <pre><code>npm install --save-dev "hardhat@^2.14.0" "@nomicfoundation/hardhat-toolbox@^2.0.0”</code></pre>
+  <pre><code> npm install --save-dev "hardhat@^2.14.0" "@nomicfoundation/hardhat-toolbox@^2.0.0"</code></pre>
+  Note: after prevoius npx hardhat command check the installation command in your terminal. Copy and use it instead of the above command.
   <li>Open the code in Visual Studio Code and run the following command to compile the smart contract present in the contracts directory:</li>
   <pre><code>npx hardhat compile</code></pre>
   <li>Run pre-written tests in the tests directory using the following command:</li>
