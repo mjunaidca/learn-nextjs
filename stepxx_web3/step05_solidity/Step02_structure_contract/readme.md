@@ -11,49 +11,6 @@ A contract consists of the following multiple constructs. Understanding these di
 </ul>
 
 Each facet has its specific purpose and use case, which can affect how the smart contract behaves, its security, and its gas consumption.
-<pre>
-<code>// SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.7.0 &lt;0.9.0;
-
-// Contract definition
-contract generalStructure {
-  // State variables
-  int public stateIntVariable; // variable of integer type
-  string stateStringVariable; // variable of string type
-  address personIdentifier; // variable of address type
-  MyStruct human; // variable of structure type
-  bool constant hasIncome = true; // variable of constant nature
-
-  // Structure definition
-  struct MyStruct {
-    string name; // variable for type string
-    uint myAge; // variable of unsigned integer type
-    bool isMarried; // variable of boolean type
-    uint[] bankAccountsNumbers; // variable - dynamic array of unsigned integer
-  }
-
-  // Modifier declaration
-  modifier onlyBy() {
-    if (msg.sender == personIdentifier) {
-      _;
-    }
-  }
-
-  // Event declaration
-  event ageRead(address, int);
-
-  // Enumeration declaration
-  enum gender { male, female }
-
-  // Function definition
-  function getAge(address _personIdentifier) onlyBy() payable external returns (uint) {
-    human = MyStruct("Ritesh", 10, true, new uint[](3)); // using struct MyStruct
-    gender _gender = gender.male; // using enum
-    emit ageRead(personIdentifier, stateIntVariable); // raising event
-  }
-}
-</code>
-</pre>
 
 <h4>Remix Test.</h4>
 <p> Copy the smart contract and run it in the browser Remix environment <a href="https://remix.ethereum.org/">https://remix.ethereum.org/</a> </p>
@@ -66,7 +23,12 @@ contract generalStructure {
   <li>Run tests in the tests directory using the following command:</li>
   <pre><code>npx hardhat test</code></pre>
   <li>Deploy the contract using the `deploy.ts` script:</li>
-  <pre><code>npx hardhat run scripts/deploy.ts</code></pre>
+    a. Setup Local Node
+    <pre><code>npx hardhat node</code></pre>
+    b. In new termical run the following command
+  <pre><code>npx hardhat run scripts/deployFunding.ts</code></pre>
+    <pre><code>npx hardhat run scripts/deployBank.ts</code></pre>
+
 </ol>
 
 <h3> 1. State variables:  </h3>
@@ -124,31 +86,12 @@ A variable of enumeration can be declared and assigned a value, as shown in the 
 
 <h3> 6. Function:  </h3>
 Functions are the executable units of code defined inside or out of contract.
-
-<code>function getAge (address \_personIdentifier) onlyBy()
-payable external returns (uint) {
-}</code>
-
-Functions have visibility qualifiers
-
-<ul>
-<li> <b> public: </b> makes functions accessible directly from outside. They become part of the contract's interface and can be called both internally and externally.</li>
-<li> <b> internal: </b> These functions cannot be accessed from outside. They are not part of the contract's interface. </li>
-<li> <b> private: </b>   functions can only be used in contracts declaring them. They cannot even be used within derived contracts and now are part of contract's interface.</li>
-<li> <b>external: </b> makes functions accessible directly externally, but not internally. These functions become part of the contract's interface.</li>
-</ul>
-
-Addition qualifiers include:
-
-<ul>
-<li> <b> constant: </b> functions that can read and return current state variable values. They don't have the ability to modify the state of a blockchain.  </li>
-<li> <b> view: </b> These functions are aliases of constant functions. </li>
-<li> <b> pure: </b>  They further constrain the ability of functions. These can neither read nor write – in short, they cannot access state variables. </li>
-<li> <b>payable: </b> Functions declared with the payable keyword can accept Ether from the caller. The call will fail if Ether is not provided by the sender.</li>
-</ul>
+A common way to define a function in Solidity is by using the function keyword, followed by a unique function name, a list of parameters (that might be empty), and a statement block surrounded by curly braces.
 
 <h3>Learning Resources </h3>
 
 https://docs.soliditylang.org/en/v0.8.19/structure-of-a-contract.html
 
 Read CH # 3 Pg: 68-76
+
+<a href='https://www.youtube.com/watch?v=mXuY7Sp5jmw'> Class 2 Block Chain and Smart Contract Programing </a>

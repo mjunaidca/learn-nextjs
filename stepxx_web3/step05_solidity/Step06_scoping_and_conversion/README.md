@@ -1,5 +1,19 @@
 <h2>Variable Scoping and Type Conversion in Solidity</h2>
 <p>Understanding variable scoping and type conversion is essential to write efficient and secure code in Solidity. </p>
+
+<h4>Setup Local HardHat Environment With Typescript.</h4>
+<p>After setting up hardhat environemnt copy the smart contract, test and deploy script then run the following commands</p>
+<ol>
+ <li>Compile the smart contract</li>
+  <pre><code>npx hardhat compile</code></pre>
+  <li>Run scripts to deploy the contracts:</li>
+  <pre><code>npx hardhat node</code></pre>
+     <pre><code>npx hardhat run scripts/deploy.ts</code></pre>
+</ol>
+
+<h4>Remix Test.</h4>
+<p> Copy the smart contract and run it in the browser Remix environment <a href="https://remix.ethereum.org/">https://remix.ethereum.org/</a> </p>
+
 <h3>Variable Scoping</h3>
 <p>Variable scoping determines the availability of a variable within a function and a contract in Solidity. There are two locations where variables can be declared in Solidity:</p>
 <ul>
@@ -16,19 +30,9 @@
 <ul>
   <li><strong>Implicit Conversion:</strong> This kind of conversion happens automatically by the compiler when the data type is widened. Solidity allows for implicit conversion from smaller to larger integral types, but not the other way around. For example, converting uint8 to uint16 happens implicitly without requiring an operator or external help for conversion.</li>
 <li><strong>Explicit Conversion:</strong> This kind of conversion is required when the compiler does not perform implicit conversion due to a loss of data or a value containing data not falling within a target data type range. Solidity provides a function for each value type for explicit conversion. An example of explicit conversion is `uint16` to `uint8`. Data loss is possible in such a case.</li>
-<h4>Remix Test.</h4>
-<p> Copy the smart contract and run it in the browser Remix environment <a href="https://remix.ethereum.org/">https://remix.ethereum.org/</a> </p>
 
-<h4>Setup Local HardHat Environment With Typescript.</h4>
-<p>After setting up hardhat environemnt copy the smart contract, test and deploy script then run the following commands</p>
-<ol>
- <li>Compile the smart contract</li>
-  <pre><code>npx hardhat compile</code></pre>
-  <li>Run tests in the tests directory using the following command:</li>
-  <pre><code>npx hardhat test</code></pre>
-  <li>Deploy the contract using the `deploy.ts` script:</li>
-  <pre><code>npx hardhat run scripts/deploy.ts</code></pre>
-</ol>
+
+
 <h4>Learning Resources</h4>
 <ul>
   <li><a href="https://docs.soliditylang.org/en/v0.8.19/units-and-global-variables.html">Solidity Documentation - Types</a></li>

@@ -1,0 +1,16 @@
+{
+  "name": "step05_functions_mapping_addresses",
+  "version": "1.0.0",
+  "description": "<h1>Functions, Addresses and Mappings</h1>\r Functions, Addresses and mappings are commonly used in smart contract development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.14.0"
+  }
+}

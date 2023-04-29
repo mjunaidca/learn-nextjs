@@ -4,10 +4,12 @@ In this directory we will learn solidity following <a href='https://docs.solidit
 
 Solidity is an object-oriented, high-level language for implementing smart contracts. Smart contracts are programs which govern the behaviour of accounts within the Ethereum state. It is statically typed, supports inheritance, libraries and complex user-defined types among other features.
 
-You can try out code examples directly in your browser with the <a href='https://remix.ethereum.org/'> Remix IDE</a>. Remix is a web browser based IDE that allows you to write, deploy and administer Solidity smart contracts, without the need to install Solidity locally.
+We will use hardhat as your development environment! 
+
+You can try out code examples directly in your browser with the <a href='https://remix.ethereum.org/'> Remix IDE</a>. Remix is a web browser based IDE that allows you to write, deploy and administer Solidity smart contracts.
 
 As humans write software, it can have bugs. You should follow established software development best-practices when writing your smart contracts. Here each step will be a hardhat project including tests and deployment scripts.
 
-Till step 7 we will learn the basics of solidity, then we will learn how to write smart contracts.
+We will learn the basics of solidity, then we will learn how to write smart contracts.
 
 You can also take help from this [repo](https://github.com/panaverse/defi-dapps-solidity-smart-contracts)

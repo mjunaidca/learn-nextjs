@@ -31,7 +31,9 @@
         },
     },
     };
+
 </code></pre>
+
 <p>Send some Sepolia test ether to the address that will be deploying the contract. You can obtain testnet ether from a faucet, such as the Alchemy Sepolia Faucet.</p>
 <p>To ensure your contract's source code is unique, add a comment with a unique identifier, like your GitHub username, to your contract. Remember that this information will be publicly available on Etherscan:</p>
 <pre><code>// Author: @janedoe
@@ -61,9 +63,10 @@ Lock with 0.001ETH and unlock timestamp 1682466357 deployed to 0x258Cc863b836BfA
 
 <h3> Learning Resources</h3>
 
-
 <ul>
 
  <li><a href="https://hardhat.org/hardhat-runner/docs/guides/verifying">Hardhat Verifying Contracts</a></li>
   <li><a href="https://docs.alchemy.com/docs/submitting-your-smart-contract-to-etherscan">Alchemy Learning Resources</a>
+  <a href='https://www.youtube.com/watch?v=NcZMDsjJ-OA'>BootCamp 2021 Class 2</a> Watch Till 32:00
+
 </ul>

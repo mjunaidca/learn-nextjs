@@ -1,0 +1,18 @@
+{
+  "name": "step04_arrays",
+  "version": "1.0.0",
+  "description": "<h1>Understanding Arrays in Solidity</h1>\r <p>Arrays are data structures in Solidity that store multiple values of the same data type. They make it easier to organize, manage, and perform operations on groups of values. Solidity provides various constructs for arrays, depending on your needs.</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^5.0.0",
+    "hardhat": "^2.14.0"
+  }
+}

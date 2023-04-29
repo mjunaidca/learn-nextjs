@@ -12,6 +12,19 @@ async function main() {
 
   // Log the address of the deployed contract
   console.log("Contract deployed to:", contract.address);
+
+  // Call the contract's getNumber() function
+  console.log("Public Number:", (await contract.getPublicNumber()));
+
+  console.log("Internal Number:", (await contract.getInternalNumber()));
+
+  console.log("Private Number:", (await contract.getPrivateNumber()));
+
+  console.log("Implicit Conversion:", (await contract.implicitConversion()));
+
+  console.log("Explicit Conversion:", (await contract.explicitConversion()));
+
+
 }
 
 // Call the main function to deploy the contract

@@ -7,6 +7,19 @@ async function main() {
   // Deploy the contract
   const counter = await Counter.deploy();
   console.log("Counter deployed to:", counter.address);
+
+  // Get Counter Initial Value
+  console.log("Counter Initial Value:", (await counter.getCount()).toString());
+
+  // Increate Counter Value
+  await counter.increment();
+
+  console.log("Increaing the Counter Value");
+
+  // Get Counter Value
+  console.log("Counter Value:", (await counter.getCount()).toString());
+
+
 }
 
 main()

@@ -1,0 +1,16 @@
+{
+  "name": "step07_global_variables",
+  "version": "1.0.0",
+  "description": "<h2>Block and Transaction Global Variables in Solidity</h2>\r <p>In Solidity, there are a few global variables that are not declared within contracts but can be accessed from code within contracts. These global variables provide information about the current transaction and blocks, allowing contracts to utilize them. Solidity provides both block- and transaction-related variables.</p>\r <h3>Global Variables and Functions in Solidity</h3>\r <p>Global variables and functions provide important information and features to contracts in Solidity. This includes information about the current transaction, block, and message, as well as cryptographic functions and address-related functions and properties.</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.14.0"
+  }
+}
