@@ -1,0 +1,16 @@
+{
+  "name": "step09_expressions_and_control_structures",
+  "version": "1.0.0",
+  "description": "<h1>Solidity Expressions and Control Structures</h1>\r <h3>Setup Local HardHat Environment With Typescript</h3>\r <p>After setting up the Hardhat environment, copy the smart contract, test, and deploy script, then run the following commands:</p>\r <ol>\r   <li>Compile the smart contract</li>\r   <pre><code>npx hardhat compile</code></pre>\r   <li>Run tests in the tests directory using the following command:</li>\r   <pre><code>npx hardhat test</code></pre>\r   <li>Deploy the contract using the `deploy.ts` script:</li>\r   <pre><code>npx hardhat run scripts/deploy.ts</code></pre>\r </ol>\r <h3>Expressions</h3>\r In Solidity, expressions are a combination of operators, constants, and variables that are evaluated to produce a value. The different types of expressions in Solidity include:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.14.0"
+  }
+}

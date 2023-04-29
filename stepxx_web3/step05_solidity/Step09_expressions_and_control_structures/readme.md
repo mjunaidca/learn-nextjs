@@ -1,4 +1,14 @@
 <h1>Solidity Expressions and Control Structures</h1>
+<h3>Setup Local HardHat Environment With Typescript</h3>
+<p>After setting up the Hardhat environment, copy the smart contract, test, and deploy script, then run the following commands:</p>
+<ol>
+  <li>Compile the smart contract</li>
+  <pre><code>npx hardhat compile</code></pre>
+  <li>Run tests in the tests directory using the following command:</li>
+  <pre><code>npx hardhat test</code></pre>
+  <li>Deploy the contract using the `deploy.ts` script:</li>
+  <pre><code>npx hardhat run scripts/deploy.ts</code></pre>
+</ol>
 <h3>Expressions</h3>
 In Solidity, expressions are a combination of operators, constants, and variables that are evaluated to produce a value. The different types of expressions in Solidity include:
 
@@ -25,3 +35,5 @@ Control structures in Solidity are used to change the flow of program execution 
 <li>Mappings, which are used to store key-value pairs where the key can be of any data type.</li>
 </ul>
 Learning Solidity expressions and control structures is essential to writing effective smart contracts. It is recommended to refer to the Solidity documentation and practice coding exercises to master these concepts.
+
+Read CH 5 from Solidity Essentials Book

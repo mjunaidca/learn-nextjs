@@ -9,6 +9,7 @@ async function main() {
   await simpleBank.deployed();
 
   console.log("SimpleBank deployed to:", simpleBank.address);
+  console.log("SimpleBank deployed to:", simpleBank.address);
 }
 
 main()

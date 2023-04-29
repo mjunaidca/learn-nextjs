@@ -1,0 +1,16 @@
+{
+  "name": "step08_ecrecover",
+  "version": "1.0.0",
+  "description": "<h2>Recovering Addresses Using ecrecover in Solidity</h2>\r <p>Ecrecover derives the address of a sender based on the digital signature. Digital signatures help in identifying the sender of a message. The message is hashed and encrypted using the private key of the sender, known only to the sender. Anyone decrypting the message using the corresponding public key can be assured that it is originating from the holder of the private key.</p>\r <h3>ecrecover Function</h3>\r <p>The ecrecover function is available in Solidity assembly only. Without assembly, this function cannot be used. It accepts four parameters – Ecrecover (messageHash, v, r, and s). Here, messageHash is the hashed message sent to a contract; s is the first 32 bytes of data in the digital signature; r is the data in the digital signature, starting from position 66 and ending at 130, with a length of 32 bytes; and v is the last 1 byte in the digital signature.</p>\r <h3>Generating a Message Hash and Digital Signature in Ethereum</h3>\r <p>When a message is sent from one Ethereum account to another, the sender must sign the message with their private key to ensure the authenticity of the message. The process of signing a message involves three steps:</p>\r <ol>\r   <li>The message is hashed using a hashing algorithm like SHA3 to generate a message hash.</li>\r   <li>The message hash is then signed using the sender's private key to generate a digital signature.</li>\r   <li>The message, along with the digital signature, is sent to the recipient.</li>\r </ol>\r <p>The recipient can then verify the authenticity of the message by performing the reverse process:</p>\r <ol>\r   <li>The message is hashed using the same hashing algorithm to generate the message hash.</li>\r   <li>The digital signature is then decrypted using the sender's public key to obtain the original message hash.</li>\r   <li>The two message hashes are compared to ensure that they are identical, which indicates that the message has not been tampered with.</li>\r </ol>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.14.0"
+  }
+}
